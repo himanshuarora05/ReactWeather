@@ -18,16 +18,16 @@ handleSearch: function(location, temp) {
     isLoading: true
   });
   openWeatherMap.getTemp(location).then(function(temp){
-    that.setState({
+      that.setState({
         location: location,
         temp: temp,
         isLoading:false
       });
      }, function(errorMessage){
-       this.setState({
+       alert('Error' + errorMessage);
+       that.setState({
          isLoading: false
        });
-       alert('Error' + errorMessage);
      });
 },
   render : function(){
