@@ -6,6 +6,11 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
+
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css');
+
+
 var name = "Himanshu";
 var message = "Message from component"
 ReactDOM.render(
